@@ -120,6 +120,7 @@ export default class ColorModeSceneBackground extends Component {
     super.willDestroy(...arguments);
     this.mediaQueryList?.removeEventListener("change", this.syncEffectiveModeBound);
     this.mutationObserver?.disconnect();
+    document.documentElement.classList.remove("has-color-mode-scene-background");
   }
 
   @action
