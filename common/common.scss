@@ -253,7 +253,7 @@ html[data-theme-color-scheme="dark"] {
 .sidebar-wrapper {
   @include scene-glass-panel-strong(24px);
   margin: 0.75rem 0 0.75rem 0.75rem;
-  overflow: clip;
+  overflow: visible;
 }
 
 .sidebar-wrapper .sidebar-footer-container,
