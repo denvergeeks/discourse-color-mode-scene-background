@@ -192,12 +192,6 @@ html.has-color-mode-scene-background body {
     );
 }
 
-.d-header-wrap,
-#main-outlet-wrapper {
-  position: relative;
-  z-index: 1;
-}
-
 :root {
   --scene-glass-border: var(--glass-border-light);
   --scene-glass-fill: var(--glass-fill-light);
