@@ -29,29 +29,16 @@ html.has-color-mode-scene-background body {
   --glass-shadow-dark:
     0 16px 42px rgb(0 0 0 / 0.34),
     0 1px 0 rgb(255 255 255 / 0.08) inset;
+
   pointer-events: none;
-  position: relative;
-  z-index: 0;
-}
-
-.color-mode-scene-background.motion-subtle {
-  --scene-cloud-duration: 80s;
-  --scene-cloud-duration-slow: 110s;
-  --scene-star-duration: 8s;
-  --scene-aurora-duration: 24s;
-}
-
-.color-mode-scene-background.motion-enhanced {
-  --scene-cloud-duration: 34s;
-  --scene-cloud-duration-slow: 50s;
-  --scene-star-duration: 4.2s;
-  --scene-aurora-duration: 12s;
-}
-
-.color-mode-scene-background__fixed-layer {
   position: fixed;
   inset: 0;
   z-index: 0;
+}
+
+.color-mode-scene-background__fixed-layer {
+  position: absolute;
+  inset: 0;
   overflow: clip;
   pointer-events: none;
 }
@@ -205,19 +192,8 @@ html.has-color-mode-scene-background body {
     );
 }
 
-#main-outlet-wrapper,
-#main-outlet,
 .d-header-wrap,
-.sidebar-wrapper,
-#reply-control,
-.user-menu,
-.search-menu,
-.fk-d-menu,
-.navigation-container,
-.list-controls,
-.topic-post,
-.topic-map,
-.select-kit.dropdown-select-box .dropdown-select-box-header {
+#main-outlet-wrapper {
   position: relative;
   z-index: 1;
 }
