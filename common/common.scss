@@ -403,8 +403,6 @@ table td {
 }
 
 @supports ((mask-image: linear-gradient(black, transparent)) or (-webkit-mask-image: linear-gradient(black, transparent))) {
-  .d-header::after,
-  .sidebar-wrapper::after,
   .search-menu::after,
   .user-menu::after,
   .fk-d-menu::after,
@@ -491,10 +489,12 @@ table td {
     border-bottom: 0;
   }
 
+  /*
   .d-header {
     backdrop-filter: blur(20px) saturate(1.2);
     -webkit-backdrop-filter: blur(20px) saturate(1.2);
   }
+  */
 }
 
 @media (prefers-reduced-motion: reduce) {
