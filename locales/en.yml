@@ -1,0 +1,13 @@
+en:
+  theme_metadata:
+    description: "Adds a global illustrated day/night background scene that follows Discourse core light, dark, and auto color mode."
+    settings:
+      enable_on_desktop: "Enable the animated illustrated scene on desktop."
+      enable_on_mobile: "Enable the animated illustrated scene on mobile."
+      day_scene_opacity: "Opacity of the day scene."
+      night_scene_opacity: "Opacity of the night scene."
+      motion_strength: "Animation intensity for the scene."
+      content_backdrop_strength: "Opacity of the readability overlay behind content."
+
+  color_mode_scene_background:
+    decorative_label: "Decorative color mode background scene"

@@ -1,0 +1,17 @@
+{
+  "name": "Color Mode Scene Background",
+  "component": true,
+  "authors": "Perplexity",
+  "about_url": "https://meta.discourse.org/t/color-mode-scene-background/REPLACE_ME",
+  "license_url": "https://github.com/YOUR-ORG/color-mode-scene-background/blob/main/LICENSE",
+  "theme_version": "0.5.0",
+  "minimum_discourse_version": "3.4.0.beta1",
+  "screenshots": [
+    "screenshots/light.png",
+    "screenshots/dark.png"
+  ],
+  "assets": {
+    "day_scene": "/assets/day-scene.svg",
+    "night_scene": "/assets/night-scene.svg"
+  }
+}

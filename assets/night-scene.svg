@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="sky-night" x1="800" y1="0" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07111E"/>
+      <stop offset="0.4" stop-color="#142A44"/>
+      <stop offset="0.72" stop-color="#213B57"/>
+      <stop offset="1" stop-color="#29445C"/>
+    </linearGradient>
+    <radialGradient id="moon-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1230 160) rotate(90) scale(110)">
+      <stop offset="0" stop-color="#FFF5D6"/>
+      <stop offset="0.42" stop-color="#E9EEFF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#A8C1FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mountain-far-night" x1="800" y1="320" x2="800" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B5060"/>
+      <stop offset="1" stop-color="#243848"/>
+    </linearGradient>
+    <linearGradient id="mountain-mid-night" x1="800" y1="430" x2="800" y2="840" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#263A4B"/>
+      <stop offset="1" stop-color="#182734"/>
+    </linearGradient>
+    <linearGradient id="mountain-near-night" x1="800" y1="560" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#162838"/>
+      <stop offset="1" stop-color="#0C1823"/>
+    </linearGradient>
+    <linearGradient id="water-night" x1="800" y1="620" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6CA0C8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#0A1721" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky-night)"/>
+  <rect width="1600" height="900" fill="url(#moon-glow)"/>
+
+  <g opacity="0.95">
+    <circle cx="1220" cy="154" r="34" fill="#FFF6D2"/>
+    <circle cx="1233" cy="146" r="34" fill="#142A44"/>
+  </g>
+
+  <g fill="#fff" opacity="0.9">
+    <circle cx="160" cy="130" r="2"/>
+    <circle cx="240" cy="86" r="1.7"/>
+    <circle cx="330" cy="164" r="1.8"/>
+    <circle cx="460" cy="112" r="2.1"/>
+    <circle cx="594" cy="84" r="1.7"/>
+    <circle cx="690" cy="156" r="1.9"/>
+    <circle cx="802" cy="92" r="1.8"/>
+    <circle cx="916" cy="134" r="2"/>
+    <circle cx="1036" cy="88" r="1.6"/>
+    <circle cx="1144" cy="124" r="1.8"/>
+    <circle cx="1326" cy="88" r="2"/>
+    <circle cx="1420" cy="140" r="1.8"/>
+  </g>
+
+  <path d="M0 540C88 495 156 468 238 450C320 431 382 430 462 404C540 378 604 330 676 328C738 326 798 368 862 392C932 418 992 431 1064 417C1146 401 1196 355 1282 344C1384 330 1498 373 1600 434V900H0V540Z" fill="url(#mountain-far-night)"/>
+  <path d="M0 640C108 606 194 598 282 566C360 538 422 486 510 482C580 479 652 528 728 548C820 572 878 560 966 526C1054 492 1118 452 1198 458C1294 465 1390 533 1600 604V900H0V640Z" fill="url(#mountain-mid-night)"/>
+  <path d="M0 736C86 718 186 690 284 676C396 660 514 676 626 654C736 632 812 578 918 572C1026 566 1104 640 1200 674C1312 714 1416 728 1600 706V900H0V736Z" fill="url(#mountain-near-night)"/>
+
+  <path d="M0 694C180 710 290 696 392 684C492 671 612 648 750 650C876 651 1032 695 1176 710C1328 727 1462 718 1600 696V900H0V694Z" fill="url(#water-night)"/>
+
+  <g fill="#0B1520" opacity="0.98">
+    <path d="M126 760L150 692L178 760H126Z"/>
+    <rect x="147" y="758" width="8" height="42" rx="2"/>
+    <path d="M262 780L292 696L326 780H262Z"/>
+    <rect x="289" y="778" width="8" height="46" rx="2"/>
+    <path d="M1338 786L1368 700L1400 786H1338Z"/>
+    <rect x="1365" y="784" width="8" height="48" rx="2"/>
+    <path d="M1468 770L1496 690L1528 770H1468Z"/>
+    <rect x="1493" y="768" width="8" height="44" rx="2"/>
+  </g>
+</svg>
