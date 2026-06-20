@@ -6,7 +6,6 @@ html.has-color-mode-scene-background body {
 .color-mode-scene-background {
   --scene-day-opacity: 0.96;
   --scene-night-opacity: 1;
-  --scene-content-backdrop-strength: 0.42;
   --scene-transition-duration: 900ms;
   --scene-transition-easing: cubic-bezier(0.22, 1, 0.36, 1);
   --scene-cloud-duration: 58s;
@@ -43,31 +42,11 @@ html.has-color-mode-scene-background body {
 
 .color-mode-scene-background__scene--day {
   opacity: var(--scene-day-opacity);
+  transform: scale(1);
+  filter: none;
 }
 
 .color-mode-scene-background__scene--night {
-  opacity: 0;
-}
-
-.color-mode-scene-background.is-dark-scene .color-mode-scene-background__scene--day {
-  opacity: 0;
-  transform: scale(1.02);
-  filter: saturate(0.9) brightness(0.82);
-}
-
-.color-mode-scene-background.is-dark-scene .color-mode-scene-background__scene--night {
-  opacity: var(--scene-night-opacity);
-  transform: scale(1);
-  filter: none;
-}
-
-.color-mode-scene-background.is-light-scene .color-mode-scene-background__scene--day {
-  opacity: var(--scene-day-opacity);
-  transform: scale(1);
-  filter: none;
-}
-
-.color-mode-scene-background.is-light-scene .color-mode-scene-background__scene--night {
   opacity: 0;
   transform: scale(1.03);
   filter: brightness(0.88);
@@ -172,7 +151,23 @@ html.has-color-mode-scene-background body {
     );
 }
 
-.color-mode-scene-background.is-dark-scene .color-mode-scene-background__content-wash {
+/* Live Discourse dark-mode selectors drive the scene swap */
+html.dark .color-mode-scene-background .color-mode-scene-background__scene--day,
+html[data-theme-color-scheme="dark"] .color-mode-scene-background .color-mode-scene-background__scene--day {
+  opacity: 0;
+  transform: scale(1.02);
+  filter: saturate(0.9) brightness(0.82);
+}
+
+html.dark .color-mode-scene-background .color-mode-scene-background__scene--night,
+html[data-theme-color-scheme="dark"] .color-mode-scene-background .color-mode-scene-background__scene--night {
+  opacity: var(--scene-night-opacity);
+  transform: scale(1);
+  filter: none;
+}
+
+html.dark .color-mode-scene-background .color-mode-scene-background__content-wash,
+html[data-theme-color-scheme="dark"] .color-mode-scene-background .color-mode-scene-background__content-wash {
   background:
     linear-gradient(
       180deg,
